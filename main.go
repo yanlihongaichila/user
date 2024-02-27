@@ -16,6 +16,7 @@ func main() {
 	if err != nil {
 		panic("failed to Mysql")
 	}
+	//自动建表
 	err = model.MigrateTable()
 	if err != nil {
 		panic(err)

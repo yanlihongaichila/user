@@ -60,3 +60,21 @@ func (u *User) CreatedUser(in *User) (info *User, err error) {
 	info = in
 	return
 }
+
+func (u *User) UpdatedUser(in *User) (info *User, err error) {
+	err = mysql.Db.Where("id = ?", in.ID).Updates(in).Error
+	if err != nil {
+		return nil, err
+	}
+
+	return in, nil
+
+}
+
+func (u *User) DeletedUser(id int64) error {
+	err := mysql.Db.Where("id = ?", id).Delete(u).Error
+	if err != nil {
+		return err
+	}
+	return nil
+}
