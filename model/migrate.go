@@ -4,5 +4,5 @@ import "github.com/yanlihongaichila/framework/mysql"
 
 // 自动创建表
 func MigrateTable() error {
-	return mysql.Db.AutoMigrate(&User{})
+	return mysql.Db.AutoMigrate(new(User))
 }
