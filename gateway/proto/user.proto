@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package user;
+option go_package="./user";
+
+
+service User {
+  rpc Ping(Request) returns(Response);
+}
+
+message Request {
+  string ping = 1;
+}
+
+message Response {
+  string pong = 1;
+}
+
+

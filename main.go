@@ -12,7 +12,7 @@ import (
 func main() {
 	//连接数据库
 	flag.Parse()
-	err := app.Init("mysql")
+	err := app.Init("config", "./config", "nacos", "mysql")
 	if err != nil {
 		panic("failed to Mysql")
 	}
@@ -22,11 +22,15 @@ func main() {
 		panic(err)
 	}
 
-	gprc.ConcentGrpc(8077, func(s *grpc.Server) {
+	//gprc.ConcentGrpc(8077, func(s *grpc.Server) {
+	//	api.RegisterUser(s)
+	//})
+
+	err = gprc.ConcentGrpc("grpc", func(s *grpc.Server) {
 		api.RegisterUser(s)
 	})
 	if err != nil {
-		panic(err)
+		return
 	}
 
 }
