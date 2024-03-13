@@ -3,9 +3,9 @@ package api
 import (
 	"context"
 	"github.com/yanlihongaichila/proto/user"
+	"github.com/yanlihongaichila/user/server"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
-	"user/server"
 )
 
 type UserService struct {

@@ -4,9 +4,9 @@ import (
 	"flag"
 	"github.com/yanlihongaichila/framework/app"
 	"github.com/yanlihongaichila/framework/gprc"
+	"github.com/yanlihongaichila/user/api"
+	"github.com/yanlihongaichila/user/model"
 	"google.golang.org/grpc"
-	"user/api"
-	"user/model"
 )
 
 func main() {

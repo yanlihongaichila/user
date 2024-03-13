@@ -2,8 +2,8 @@ package server
 
 import (
 	"github.com/yanlihongaichila/proto/user"
+	"github.com/yanlihongaichila/user/model"
 	"gorm.io/gorm"
-	"user/model"
 )
 
 /*
