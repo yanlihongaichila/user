@@ -3,7 +3,7 @@ module user
 go 1.20
 
 require (
-	github.com/yanlihongaichila/framework v0.0.0-20240310154716-f2f8f3d44776
+	github.com/yanlihongaichila/framework v0.0.0-20240313105430-a54ad61a51ec
 	github.com/yanlihongaichila/proto v0.0.0-20240227090340-d6f183722824
 	google.golang.org/grpc v1.62.0
 	gorm.io/gorm v1.25.7
