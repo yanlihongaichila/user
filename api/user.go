@@ -2,6 +2,7 @@ package api
 
 import (
 	"context"
+	"fmt"
 	"github.com/yanlihongaichila/proto/user"
 	"github.com/yanlihongaichila/user/server"
 	"google.golang.org/grpc/codes"
@@ -108,6 +109,8 @@ func (u UserService) DeletedUser(ctx context.Context, request *user.DeletedUserR
 }
 
 func (u UserService) GetUserByUsername(ctx context.Context, request *user.GetUserByUsernameRequest) (*user.GetUserByUsernameResponse, error) {
+	fmt.Println("1111111111111111111")
+	fmt.Println(request.Username)
 	if request.Username == "" {
 		return nil, status.Error(codes.InvalidArgument, "username is required")
 	}

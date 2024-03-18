@@ -3,7 +3,7 @@ module github.com/yanlihongaichila/user
 go 1.20
 
 require (
-	github.com/yanlihongaichila/framework v0.0.0-20240313105430-a54ad61a51ec
+	github.com/yanlihongaichila/framework v0.0.0-20240314093500-a8d10dbecd1b
 	github.com/yanlihongaichila/proto v0.0.0-20240227090340-d6f183722824
 	google.golang.org/grpc v1.62.0
 	gorm.io/gorm v1.25.7
@@ -20,8 +20,9 @@ require (
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/buger/jsonparser v1.1.1 // indirect
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect
-	github.com/fatih/color v1.14.1 // indirect
+	github.com/fatih/color v1.15.0 // indirect
 	github.com/fsnotify/fsnotify v1.7.0 // indirect
+	github.com/go-playground/form v3.1.4+incompatible // indirect
 	github.com/go-sql-driver/mysql v1.7.1 // indirect
 	github.com/golang/mock v1.6.0 // indirect
 	github.com/golang/protobuf v1.5.3 // indirect
@@ -38,11 +39,13 @@ require (
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/jinzhu/now v1.1.5 // indirect
 	github.com/jmespath/go-jmespath v0.0.0-20180206201540-c2b33e8439af // indirect
+	github.com/jpillora/backoff v1.0.0 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/magiconair/properties v1.8.7 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/matttproud/golang_protobuf_extensions v1.0.1 // indirect
+	github.com/mbobakov/grpc-consul-resolver v1.5.3 // indirect
 	github.com/mitchellh/go-homedir v1.1.0 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
@@ -82,4 +85,4 @@ require (
 	gorm.io/driver/mysql v1.5.4 // indirect
 )
 
-//replace github.com/yanlihongaichila/framework v0.0.0-20240310050524-abf3ec5bed69 => D:\goland\src\framework
+//replace github.com/yanlihongaichila/framework v0.0.0-20240313124654-9844409ae325 => D:\goland\src\framework

@@ -18,7 +18,9 @@ RUN go build main.go
 #
 #COPY --from=build /app/main /main
 
-CMD ["./main"]
+
+ENTRYPOINT ["go", "run","main.go"]
+#CMD ["./main"]
 
 
 #FROM centos:centos7.9.2009
